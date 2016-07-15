@@ -1,4 +1,13 @@
 Rails.application.routes.draw do
+
+  # Set the root of the website to be that
+  root 'pages#index'
+
+  # change routes from flutter.com/pages/home to flutter.com/home
+  get 'home' => 'pages#home'
+  get 'profile' => 'pages#profile'
+  get 'explore' => 'pages#explore'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
