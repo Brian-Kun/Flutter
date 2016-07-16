@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  devise_for :users
   # Set the root of the website to be that
   root 'pages#index'
 
